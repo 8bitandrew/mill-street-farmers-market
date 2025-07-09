@@ -51,23 +51,23 @@ const About = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Season & Hours</h3>
                             <ul className="space-y-2">
-                                <li className="flex justify-between">
-                                    <span><b>Season</b></span>
-                                    <span><b>August 1st - September 26th, 2025</b></span>
+                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                                    <span className="font-semibold">Season</span>
+                                    <span className="text-right sm:text-left">August 1st - September 26th, 2025</span>
                                 </li>
-                                <li className="flex justify-between">
-                                    <span><b>Friday</b></span>
-                                    <span><b>3:00 PM - 7:00 PM</b></span>
+                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                                    <span className="font-semibold">Friday</span>
+                                    <span className="text-right sm:text-left">3:00 PM - 7:00 PM</span>
                                 </li>
-                                <li className="flex justify-between">
-                                    <span><b>Saturday - Thursday</b></span>
-                                    <span><b>Closed</b></span>
+                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                                    <span className="font-semibold">Saturday - Thursday</span>
+                                    <span className="text-right sm:gap-4">Closed</span>
                                 </li>
                             </ul>
-                            <h3 className="text-xl font-semibold mt-8 mb-4"><b>Location</b></h3>
+                            <h3 className="text-xl font-semibold mt-8 mb-4">Location</h3>
                             <address className="not-italic">
-                                <b>350 Mill Street</b><br />
-                                <b>Birnamwood, WI 54414</b>
+                                <p className="font-semibold">350 Mill Street</p>
+                                <p className="font-semibold">Birnamwood, WI 54414</p>
                             </address>
                             <a 
                                             href="https://maps.app.goo.gl/d9LvUwQHJDkaTZbT8" 

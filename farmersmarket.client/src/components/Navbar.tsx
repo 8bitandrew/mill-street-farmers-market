@@ -52,7 +52,7 @@ const Navbar = () => {
                                         alt="Mill Street Farmers Market Logo" 
                                     />
                                 </div>
-                                <span className="text-gray-50 text-xl font-bold">Mill Street Farmers Market</span>
+                                <span className="hidden md:inline text-gray-50 text-xl font-bold">Mill Street Farmers Market</span>
                             </Link>
                         </div>
                         <div className="hidden md:ml-6 md:flex md:space-x-8">
