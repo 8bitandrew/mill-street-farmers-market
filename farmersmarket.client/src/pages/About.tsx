@@ -45,29 +45,29 @@ const About = () => {
                 </section>
 
                 {/* Market Info */}
-                <section className="bg-green-50 rounded-lg p-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Market Information</h2>
+                <section className="bg-green-50 rounded-lg p-4 sm:p-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center sm:text-left">Market Information</h2>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div>
+                        <div className="text-center sm:text-left">
                             <h3 className="text-xl font-semibold mb-4">Season & Hours</h3>
-                            <ul className="space-y-2">
-                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                            <ul className="space-y-3">
+                                <li className="flex flex-col">
                                     <span className="font-semibold">Season</span>
-                                    <span className="text-right sm:text-left">August 1st - September 26th, 2025</span>
+                                    <span className="text-gray-700">August 1st - September 26th, 2025</span>
                                 </li>
-                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                                <li className="flex flex-col">
                                     <span className="font-semibold">Friday</span>
-                                    <span className="text-right sm:text-left">3:00 PM - 7:00 PM</span>
+                                    <span className="text-gray-700">3:00 PM - 7:00 PM</span>
                                 </li>
-                                <li className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-1">
+                                <li className="flex flex-col">
                                     <span className="font-semibold">Saturday - Thursday</span>
-                                    <span className="text-right sm:gap-4">Closed</span>
+                                    <span className="text-gray-700">Closed</span>
                                 </li>
                             </ul>
                             <h3 className="text-xl font-semibold mt-8 mb-4">Location</h3>
                             <address className="not-italic">
                                 <p className="font-semibold">350 Mill Street</p>
-                                <p className="font-semibold">Birnamwood, WI 54414</p>
+                                <p className="text-gray-700">Birnamwood, WI 54414</p>
                             </address>
                             <a 
                                             href="https://maps.app.goo.gl/d9LvUwQHJDkaTZbT8" 
