@@ -23,7 +23,7 @@ const Vendors = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <a 
-                                href="https://drive.google.com/uc?export=download&id=1L47HEt9DZ3ad_PPKwwuYGgBJ9n4gLpQ2"
+                                href="https://docs.google.com/document/d/1L47HEt9DZ3ad_PPKwwuYGgBJ9n4gLpQ2/edit?usp=sharing&ouid=104128672878645319556&rtpof=true&sd=true"
                                 download="FarmersMarket_Vendor_Application.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
