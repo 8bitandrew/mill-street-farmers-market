@@ -1,0 +1,11 @@
+{
+  "name": "Mill Street Farmers Market",
+  "short_name": "Mill St Market",
+  "description": "Mill Street Farmers Market in Birnamwood, WI",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#15803d",
+  "theme_color": "#15803d"
+}
