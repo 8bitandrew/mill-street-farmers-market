@@ -20,25 +20,25 @@ const About = () => {
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <h3 className="text-xl font-semibold mb-4 text-green-700">Sustainable Agriculture</h3>
                             <p className="text-gray-700">
-                            We are committed to improving the sustainability of local farming and production, helping ensure that future generations can enjoy the same fresh, local goods.
+                            We support the growers and producers of agricultural commodities by offering a location for them to sell their produce to the local community.
                             </p>
                         </div>
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <h3 className="text-xl font-semibold mb-4 text-green-700">Local Economy</h3>
                             <p className="text-gray-700">
-                            Our market helps keep commerce close to home by giving small-scale growers and producers a reliable outlet to grow their businesses and serve their neighbors.
+                            We aim to support local economic activity and improve the sustainability of growing and producing farm products and associated goods.
                             </p>
                         </div>
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <h3 className="text-xl font-semibold mb-4 text-green-700">Healthy Living</h3>
                             <p className="text-gray-700">
-                                We believe in building strong community connections through shared experiences around food and local products.
+                                We promote a healthy lifestyle by making available a wide variety of quality, fresh produce and other farm products.
                             </p>
                         </div>
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <h3 className="text-xl font-semibold mb-4 text-green-700">Supporting Local Growers and Producers</h3>
                             <p className="text-gray-700">
-                            We proudly provide a vibrant, community-centered space where local farmers and producers can sell their agricultural goods directly to the people who live here.
+                            Our market creates opportunities for direct sales of agricultural products, strengthening the connection between producers and the local community.
                             </p>
                         </div>
                     </div>
