@@ -19,7 +19,7 @@ const Vendors = () => {
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Become a Vendor</h2>
                         <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
                             Interested in joining our market? We're always looking for vendors to join our community.
-                            Email your vendor application to <a href="mailto:millstreetfarmersmarket@gmail.com" className="text-green-700 hover:text-green-600">millstreetfarmersmarket@gmail.com</a>
+                            Email your vendor application to <a href="mailto:millstreetbusinessgroup@gmail.com" className="text-green-700 hover:text-green-600">millstreetbusinessgroup@gmail.com</a>
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <a 

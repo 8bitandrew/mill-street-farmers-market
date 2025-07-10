@@ -85,7 +85,7 @@ const About = () => {
                             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                             <p className="mb-4">
                                 <strong>Phone:</strong> (715) 707-0780<br />
-                                <strong>Email:</strong> <a href="mailto:millstreetfarmersmarket@gmail.com" className="text-green-700 hover:text-green-600">millstreetfarmersmarket@gmail.com</a>
+                                <strong>Email:</strong> <a href="mailto:millstreetbusinessgroup@gmail.com" className="text-green-700 hover:text-green-600">millstreetbusinessgroup@gmail.com</a>
                             </p>
                             <div className="text-center">
                                 <h3 className="text-xl font-semibold mt-8 mb-4">Follow Us</h3>
