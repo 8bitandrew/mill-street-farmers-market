@@ -18,21 +18,35 @@ const CountdownTimer = () => {
     });
 
     useEffect(() => {
-        const marketStart = new Date('August 1, 2025 15:00:00 CST');
-        const marketEnd = new Date('September 26, 2025 19:00:00 CST');
+        // Get UTC date given central time date
+        const createMarketDate = (year: number, month: number, day: number, hours: number, minutes: number): Date => {
+            const centralDate = new Date(new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/Chicago',
+                year:'numeric', month:'2-digit', day:'2-digit',
+                hour:'2-digit', minute:'2-digit', second:'2-digit',
+                hour12: false
+              }).format(new Date(year, month - 1, day, hours, minutes)));
+            
+            return new Date(centralDate.toLocaleString('en-US', { timeZone: 'UTC' }));
+        };
+
+        const marketStartUtc = createMarketDate(2025, 8, 1, 15, 0); // August 1, 2025 3:00 PM CDT
+        const marketEndUtc = createMarketDate(2025, 9, 26, 19, 0); // September 26, 2025 7:00 PM CDT
         
         const updateTimer = () => {
-            const now = new Date();
+            const now = new Date(); // Current time in user's local timezone
+            const nowUTC = new Date(now.toLocaleString('en-US', { timeZone: 'UTC' })); // Convert to UTC
+            
             let targetDate: Date;
             let status: 'before' | 'during' | 'after';
             
-            if (now < marketStart) {
+            if (nowUTC < marketStartUtc) {
                 // Before market starts
-                targetDate = marketStart;
+                targetDate = marketStartUtc;
                 status = 'before';
-            } else if (now < marketEnd) {
+            } else if (nowUTC < marketEndUtc) {
                 // During market season
-                targetDate = marketEnd;
+                targetDate = marketEndUtc;
                 status = 'during';
             } else {
                 // After market ends
@@ -46,7 +60,7 @@ const CountdownTimer = () => {
                 return;
             }
 
-            const difference = targetDate.getTime() - now.getTime();
+            const difference = targetDate.getTime() - nowUTC.getTime();
             const days = Math.max(0, Math.floor(difference / (1000 * 60 * 60 * 24)));
             const hours = Math.max(0, Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
             const minutes = Math.max(0, Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)));
@@ -80,7 +94,7 @@ const CountdownTimer = () => {
         );
     }
 
-    if (timeLeft.status === 'during' && timeLeft.days === 0 && timeLeft.hours < 1) {
+    if (timeLeft.status === 'during' && timeLeft.days === 0 && timeLeft.hours < 10) {
         return (
             <div className="mt-6 bg-green-600 bg-opacity-80 text-white px-4 py-2 rounded-lg">
                 <p className="text-xl font-semibold">Market Closes Soon!</p>
