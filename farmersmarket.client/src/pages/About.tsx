@@ -53,7 +53,7 @@ const About = () => {
                             <ul className="space-y-3">
                                 <li className="flex flex-col">
                                     <span className="font-semibold">Season</span>
-                                    <span className="text-gray-700">August 1st - September 26th, 2025</span>
+                                    <span className="text-gray-700">August 15th - September 26th, 2025</span>
                                 </li>
                                 <li className="flex flex-col">
                                     <span className="font-semibold">Friday</span>

@@ -27,7 +27,7 @@ const Home = () => {
                     <div className="text-center text-white px-4">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Mill Street Farmers Market</h1>
                         <div className="text-lg text-white mb-4">
-                            <p className="text-white">August 1st - September 26th, 2025</p>
+                            <p className="text-white">August 15th - September 26th, 2025</p>
                             <p className="text-white">Every Friday | 3:00 PM - 7:00 PM</p>
                             <p className="text-white">350 Mill Street, Birnamwood, WI</p>
                         </div>
@@ -87,7 +87,7 @@ const Home = () => {
                             <ul className="space-y-2">
                                 <li className="flex justify-between">
                                     <span><b>Season</b></span>
-                                    <span><b>August 1st - September 26th, 2025</b></span>
+                                    <span><b>August 15th - September 26th, 2025</b></span>
                                 </li>
                                 <li className="flex justify-between">
                                     <span><b>Friday</b></span>

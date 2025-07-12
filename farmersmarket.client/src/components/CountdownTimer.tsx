@@ -30,7 +30,7 @@ const CountdownTimer = () => {
             return new Date(centralDate.toLocaleString('en-US', { timeZone: 'UTC' }));
         };
 
-        const marketStartUtc = createMarketDate(2025, 8, 1, 15, 0); // August 1, 2025 3:00 PM CDT
+        const marketStartUtc = createMarketDate(2025, 8, 15, 15, 0); // August 15, 2025 3:00 PM CDT
         const marketEndUtc = createMarketDate(2025, 9, 26, 19, 0); // September 26, 2025 7:00 PM CDT
         
         const updateTimer = () => {
